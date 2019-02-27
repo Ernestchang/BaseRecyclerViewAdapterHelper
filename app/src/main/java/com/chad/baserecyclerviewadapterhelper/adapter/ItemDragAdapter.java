@@ -31,4 +31,10 @@ public class ItemDragAdapter extends BaseItemDraggableAdapter<String, BaseViewHo
         }
         helper.setText(R.id.tv, item);
     }
+
+    @Override
+    public boolean inRange(int position) {
+        return position >= 1 && position < mData.size();
+    }
+
 }

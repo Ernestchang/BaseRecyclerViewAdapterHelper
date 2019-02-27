@@ -257,7 +257,7 @@ public abstract class BaseItemDraggableAdapter<T, K extends BaseViewHolder> exte
         }
     }
 
-    private boolean inRange(int position) {
+    public boolean inRange(int position) {
         return position >= 0 && position < mData.size();
     }
 }
